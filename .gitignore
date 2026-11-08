@@ -1,0 +1,50 @@
+.venv/
+.env
+__pycache__/
+logs/
+data/output_scored.csv
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Data files (sample input is fine, but not output)
+data/input_companies.csv
