@@ -1,13 +1,16 @@
 import logging
+import os
 from pipeline import run_pipeline
 from crm_sync import sync_to_hubspot
+
+os.makedirs("../logs", exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("../logs/run.log"),
-        logging.StreamHandler(),
+        logging.StreamHandler(), # This prints to console (Docker logs)
     ],
 )
 
